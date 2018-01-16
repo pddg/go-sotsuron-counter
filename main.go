@@ -10,5 +10,5 @@ func main() {
 	now := time.Now()
 	diff := limit.Sub(now)
 	hoursInt := int(diff.Hours())
-	fmt.Printf("卒論提出まで%d日と%d時間%d分\n", hoursInt/24, hoursInt%60, int(diff.Seconds())%60)
+	fmt.Printf("卒論提出まで%d日と%d時間%d分", hoursInt/24, hoursInt%60, int(diff.Seconds())%60)
 }
